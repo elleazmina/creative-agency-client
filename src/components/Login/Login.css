@@ -1,0 +1,16 @@
+.login-info {
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid gray;
+}
+.googleBtn {
+    background-image: url("https://img.icons8.com/cute-clipart/64/000000/google-logo.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    
+    font-family: 'Poppins';
+}

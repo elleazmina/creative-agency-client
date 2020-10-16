@@ -1,0 +1,18 @@
+.background {
+    position: relative;
+    padding-bottom: 3.5rem;
+    overflow: hidden;
+  }
+  
+  .background:before {
+    background-color: #FBD062;
+    transform: skewy(-5.5deg); /* angle you want */
+    transform-origin: bottom left;
+    content: ' ';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+  }
