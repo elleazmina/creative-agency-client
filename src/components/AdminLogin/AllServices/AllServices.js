@@ -8,14 +8,16 @@ const AllServices = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://radiant-springs-91850.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
   return (
-    <div className="container-fluid row" >
-            {/* <Sidebar></Sidebar> */}
-            <div className="col-md-10 p-4 pr-5">
+    <div className="row" >
+            <div className="col-md-5">
+              <Sidebar></Sidebar>
+            </div>
+            <div className="col-md-7 p-4 pr-5">
                 <ServiceDataTable orders={orders}></ServiceDataTable>
             </div>
         </div>

@@ -22,7 +22,7 @@ const Review = () => {
       formData.append('designation', info.designation);
       formData.append('review', info.review);
 
-      fetch('http://localhost:5000/addReview', {
+      fetch('https://radiant-springs-91850.herokuapp.com/addReview', {
         method: 'POST',
         body: formData
       })
@@ -35,8 +35,10 @@ const Review = () => {
       })
     }
   return (
-    <section className="container-fluid row">
+    <section className="row">
+      <div className="col-md-5">
       <Sidebar></Sidebar>
+      </div>
 
       <div className="col-md-5 col-sm-12 col-12 my-5">
         <form action="" onSubmit={handleSubmit(onSubmit)}>

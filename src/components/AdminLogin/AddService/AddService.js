@@ -24,7 +24,7 @@ const AddService = () => {
       formData.append('title', info.title);
       formData.append('description', info.description);
 
-      fetch('http://localhost:5000/addService', {
+      fetch('https://radiant-springs-91850.herokuapp.com/addService', {
         method: 'POST',
         body: formData
       })
@@ -38,8 +38,11 @@ const AddService = () => {
     }
   
   return (
-    <section className="container-fluid row">
+    <section className="row">
+
+      <div className="col-md-5">
       <Sidebar></Sidebar>
+      </div>
 
       <div className="col-md-5 col-sm-12 col-12 my-5">
         <form onSubmit={handleSubmit(onSubmit)}>

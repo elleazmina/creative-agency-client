@@ -4,8 +4,11 @@ import Sidebar from '../../Sidebar/Sidebar';
 
 const Dashboard = () => {
     return (
-        <section className="container-fluid row">
-        <Sidebar></Sidebar>
+        <section className="row">
+            <div className="col-md-5">
+            <Sidebar></Sidebar>
+            </div>
+        
  
          <div className="col-md-5 col-sm-12 col-12 my-5">
           <Order></Order>

@@ -27,7 +27,7 @@ const ServiceDetail = ({ service }) => {
         :
         <img
         style={{ height: "50px" }}
-        src={`http://localhost:5000/${service.img}`}
+        src={`https://radiant-springs-91850.herokuapp.com/${service.img}`}
         alt=""
       />
       }

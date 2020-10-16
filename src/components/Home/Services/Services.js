@@ -24,7 +24,7 @@ import ServiceDetail from "../ServiceDetail/ServiceDetail";
 const Services = () => {
   const [services, setServices] = useState([]);
 useEffect(() => {
-  fetch("http://localhost:5000/services") 
+  fetch("https://radiant-springs-91850.herokuapp.com/services") 
     .then((res) => res.json())
     .then((data) => setServices(data));
 }, []);

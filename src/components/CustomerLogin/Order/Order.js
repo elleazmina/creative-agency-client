@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Order = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = (data) => {
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://radiant-springs-91850.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(data)
